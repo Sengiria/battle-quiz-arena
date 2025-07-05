@@ -61,11 +61,14 @@ export const useGameStore = create<GameStore>((set) => ({
       roomCode: null,
       playerId: null,
       playerName: null,
+      enemyName: null,
       phase: PHASE_MENU,
       playerHp: 7,
       enemyHp: 7,
       excludedCategories: [],
       questions: [],
-      feedback: null
+      isPlayerOne: false,
+      feedback: null,
+      round: 0
     }),
 }));

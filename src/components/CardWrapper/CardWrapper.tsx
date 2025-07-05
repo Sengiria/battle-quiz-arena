@@ -8,7 +8,7 @@ const base = import.meta.env.BASE_URL;
       className="relative w-full max-w-[400px] bg-no-repeat bg-[length:100%_100%] bg-center overflow-hidden transition-all duration-300 z-40"
       style={{ backgroundImage: `url('${base}assets/bg.png')` }}
     >
-      <div className="relative z-10 max-h-[85vh] overflow-y-auto px-2 sm:px-6 sm:py-4 flex flex-col items-center justify-center gap-4 m-6 min-h-[300px]">
+      <div className="relative z-10 max-h-[85vh] overflow-y-auto px-8 sm:py-4 flex flex-col items-center justify-center gap-4 m-6 min-h-[300px]">
         <AnimatePresence mode="wait">
           <motion.div
             key={keyProp}

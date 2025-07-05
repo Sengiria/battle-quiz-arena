@@ -35,11 +35,12 @@ const Game = ({ isTest = false }: { isTest?: boolean }) => {
   const setPhase = useGameStore((s) => s.setPhase);
   const resetGame = useGameStore((s) => s.resetGame);
   const setFeedback = useGameStore((s) => s.setFeedback);
+    const isPlayerOne = useGameStore((s) => s.isPlayerOne);
+
   const [excludedCategory, setExcludedCategory] = useState<Category | null>(null)
   const [disabledExcludeCategoryBtn, setDisabledExcludeCategoryBtn] = useState<boolean>(false)
   const { showIntro, introVisible } = useIntro(isTest);
   const [showCardWrapper, setShowCardWrapper] = useState(false);
-  const isPlayerOne = useGameStore((s) => s.isPlayerOne);
   const isCastle = isPlayerOne;
   const [prevRound, setPrevRound] = useState(round);
   const [showCastleBoom, setShowCastleBoom] = useState(false);
@@ -110,6 +111,12 @@ const Game = ({ isTest = false }: { isTest?: boolean }) => {
     if (!roomCode || !playerId || !selected) return;
     answerQuestion(selected, roomCode, playerId)
   };
+
+  const handleReset = () => {
+    resetGame();
+    setExcludedCategory(null)
+    setDisabledExcludeCategoryBtn(false)
+  }
 
   useEffect(() => {
     if (isTest) {
@@ -223,7 +230,7 @@ transition-opacity duration-1000 ease-out"
       {[PHASE_WIN, PHASE_GAME_OVER, PHASE_TIE].includes(phase) && (
         <GameEndScreen
           type={phase}
-          onRestart={() => { resetGame(); setExcludedCategory(null) }}
+          onRestart={handleReset}
         />
       )}
     </div>
