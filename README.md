@@ -1,25 +1,14 @@
-# Battle Quiz - Single Player
+# Battle Quiz - Multiplayer
 
-🎯 **Battle Quiz** is a dynamic single-player quiz game where knowledge is your weapon! Choose your difficulty, survive the questions, and defeat the castle with your intellect.
+🎯 **Battle Quiz Arena** is a dynamic multi-player quiz game where knowledge is your weapon! Both players first exclude a category of their choice, then move on to survive the questions, and defeat the opponent with their intellect.
 
-[▶️ Play the game](https://sengiria.github.io/battle-quiz/)
+[▶️ Play the game](https://sengiria.github.io/battle-quiz-arena/)
 
 ---
 
 ## 🧠 About the Game
 
-In this fantasy-themed quiz challenge, you must answer a series of questions across 4 difficulty levels:
-
-- **Easy**
-- **Medium**
-- **Hard**
-- **Hardcore**
-
-Each level determines:
-- How many questions you'll face.
-- How much HP (health points) you have to endure wrong answers.
-
-Your goal? Outlast the questions and destroy the castle!
+In this fantasy-themed quiz challenge, you must answer a series of questions (maximum 40), until one of the players run out of hp.
 
 ---
 
@@ -29,6 +18,7 @@ Your goal? Outlast the questions and destroy the castle!
 - **TypeScript**
 - **Vite**
 - **Tailwind CSS**
+- **Firebase**
 
 ---
 
@@ -38,7 +28,7 @@ Your goal? Outlast the questions and destroy the castle!
 
 1. **Clone the repository**  
   ```bash
-   git clone https://github.com/your-username/battle-quiz.git
+   git clone https://github.com/your-username/battle-quiz-arena.git
   ```
 2. **Install dependencies**  
   ```bash
@@ -51,20 +41,13 @@ Your goal? Outlast the questions and destroy the castle!
 
 ## 🎮 How to Play
    
-- Choose your difficulty on the start screen.
-- Select the categories you wish to include.
+- Create or Join a room using a generated room code.
+- Select a category you wish to exclude.
 - Read each question and select the correct answer.
 - Wrong answers cost you HP. Lose all HP and the game is over.
-- Answer correctly to damage the enemy castle.
-- Survive all questions to win!
-
-## 🏗️ Roadmap
-
-- Single player mode
-- Difficulty scaling (questions + HP)
-- Multiplayer mode (coming soon)
-- Sound effects and music (coming soon)
-- Leaderboard or high score tracking (coming soon)
+- Answer correctly to damage your opponent.
+- In case you both answer correctly, no one takes damage that round.
+- Survive your opponent to win!
 
 ## 🎨 Assets & Credits
 Castle assets from CraftPix.net
