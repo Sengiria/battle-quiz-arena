@@ -70,12 +70,6 @@ export const generalKnowledgeQuestions: Question[] = [
   },
   {
     category: CATEGORY_GENERAL,
-    question: "Who painted the Mona Lisa?",
-    answers: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
-    correctAnswer: "Leonardo da Vinci",
-  },
-  {
-    category: CATEGORY_GENERAL,
     question: "Which gas do plants absorb from the atmosphere?",
     answers: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
     correctAnswer: "Carbon Dioxide",

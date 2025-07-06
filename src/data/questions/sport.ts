@@ -66,7 +66,7 @@ export const sportQuestions: Question[] = [
     category: CATEGORY_SPORT,
     question: 'Which club won the UEFA Champions League in 2024–25?',
     answers: ['Manchester City', 'Real Madrid', 'Paris Saint-Germain', 'Bayern Munich'],
-    correctAnswer: 'Manchester City',
+    correctAnswer: 'Paris Saint-Germain',
   },
   {
     category: CATEGORY_SPORT,
@@ -125,8 +125,8 @@ export const sportQuestions: Question[] = [
   {
     category: CATEGORY_SPORT,
     question: 'Who won the 2024 UEFA European Championship (Euro 2024)?',
-    answers: ['England', 'Germany', 'France', 'Italy'],
-    correctAnswer: 'Germany',
+    answers: ['England', 'Spain', 'France', 'Italy'],
+    correctAnswer: 'Spain',
   },
   {
     category: CATEGORY_SPORT,
